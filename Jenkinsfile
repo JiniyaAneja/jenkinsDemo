@@ -1,4 +1,4 @@
-[05:11, 8/10/2021] Harman Clg: pipeline {
+pipeline {
 	 agent any 
 	 
 	 stages {
