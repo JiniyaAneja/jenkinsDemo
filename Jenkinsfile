@@ -5,16 +5,23 @@ pipeline {
 		stage("compile") {
 			steps {
 				echo "Compiling"
-				bat """ javac myclass.java """
+				bat """ javac jenkinsdemo.java """
 				}
 			}
 			
 		stage ("run") {
 			steps {
 				echo "Running"
-				bat """ java myclass"""
+				bat """ java jenkinsdemo"""
 				}
 			}
+		 stage ("finish") {
+			steps {
+				echo "Finished Successfully"
+		
+				}
+		 }
+		 
 			
 		}
 	}
